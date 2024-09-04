@@ -18,11 +18,18 @@
 
 import Foundation
 
-
+@Observable
+class ModelData{
+    
 //  creates a global variable with is an array of landmarks
+    var landmarks: [Landmark] = load("landmarkData.json")
+    
+}
+
+
+
 //  initializes the function "load" pointing at the landmarks.data file
 
-var landmarks: [Landmark] = load("landmarkData.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
