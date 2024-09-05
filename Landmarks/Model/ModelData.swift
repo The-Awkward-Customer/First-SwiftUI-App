@@ -23,6 +23,7 @@ class ModelData{
     
 //  creates a global variable with is an array of landmarks
     var landmarks: [Landmark] = load("landmarkData.json")
+    var hikes: [Hike] = load("hikeData.json")
     
 }
 
